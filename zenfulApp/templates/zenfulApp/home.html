@@ -1,0 +1,75 @@
+{% extends 'zenfulApp/main.html' %}
+{% load static %}
+{% block content %}
+
+<section class="jumbotron text-center">
+    <div class="container">
+      <img src="{% static 'images/logo.png' %}">
+      <h1>Zen Mind - Bring the calmness within You</h1>
+    </div>
+  </section>
+
+<main role="main">
+<div class="album py-5 bg-light">
+
+    <div class="container">
+      <h2 class="mb-5 text-center">What in for You?...</h2>
+      <div class="row h-100">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'images/info.svg' %}" class="mr-2">
+            <div class="card-body">
+              <h3 class="text-muted text-center">What/Why?</h3>
+              <p class="card-text">Contains all the information you need to know about why mental health is important for you.</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-primary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- single card-->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'images/activities.svg' %}" class="mr-2">
+            <div class="card-body">
+              <h3 class="text-muted text-center">Activities</h3>
+              <p class="card-text">Select from a wide range of mindful activities like: destressing, calming, etc...</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-primary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- single card-->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'images/yoga.svg' %}" class="mr-2">
+            <div class="card-body">
+              <h3 class="text-muted text-center">Apps</h3>
+              <p class="card-text">Use our simple-to-use apps to decrease your stress levels along with increasing productivity.</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-primary">View</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
