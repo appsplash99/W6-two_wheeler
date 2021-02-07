@@ -69,7 +69,7 @@
               <strong class="d-inline-block mb-2 text-success">Best Escape</strong>
               <h3 class="mb-0">Listen to music</h3>
               <p class="mb-auto">Listen to your favorite music artists or find a calming music playlist on Youtube, Spotify, Pandora, or whatever music platform you enjoy using. Take a look for some inspiration here, here, and here.</p>
-              <a href="#" class="stretched-link">Let's do it</a>
+              <a href="https://music.youtube.com/playlist?list=RDCLAK5uy_mSaYvcoVvag_GrAc593WX3MoxTLvUXYT8" class="stretched-link">Let's do it</a>
             </div>
             <div class="col-auto d-none d-lg-block">
               <img src="{% static 'images/music.svg' %}" class="bd-placeholder-img pr-3" width="200" height="250">
@@ -83,7 +83,7 @@
               <strong class="d-inline-block mb-2 text-primary">Game On...</strong>
               <h3 class="mb-0">Play a video game</h3>
               <p class="mb-auto">There are video games catering to all kinds of people, whether you enjoy FPS games, RPGs, sandbox games, or something else! For bonus points, play with a few friends (or against them).</p>
-              <a href="#" class="stretched-link">Let's do it</a>
+              <a href="https://www.google.com/logos/2010/pacman10-i.html" class="stretched-link">Let's do it</a>
             </div>
             <div class="col-auto d-none d-lg-block">
               <img src="{% static 'images/game.svg' %}" class="bd-placeholder-img pr-3" width="200" height="250">
@@ -131,12 +131,30 @@
               <h3 class="mb-0">Meditate</h3>
               <p class="mb-auto">Sit on the floor or the couch and close your
           eyes, focusing on your breathing and heartbeat. We even have a <a class="purple-link"
-            href="meditate.html">meditation tool</a> to help you regulate your breathing, along with some nice music to
+            href="{% url 'meditateAppPage_url' %}">meditation tool</a> to help you regulate your breathing, along with some nice music to
           set the mood.</p>
-              <a href="#" class="stretched-link">Let's do it</a>
+              <a href="{% url 'meditateAppPage_url' %}" class="stretched-link">Let's do it</a>
             </div>
             <div class="col-auto d-none d-lg-block">
               <img src="{% static 'images/calm.svg' %}" class="bd-placeholder-img pr-3" width="200" height="250">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Prioritize Things</strong>
+              <h3 class="mb-0">Make a to-do list</h3>
+              <p class="mb-auto">Keep all your tasks in order with a to-do list.
+          You can buy a planner or notebook, or use our <a class="purple-link" href="todo.html">priority list tool</a>
+          to get all of your activities in one place, and check each one off when you've finished.</p>
+              <a href=""{% url 'priorityListAppPage_url' %}"" class="stretched-link">Let's do it</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="{% static 'images/todo.svg' %}" class="bd-placeholder-img pr-3" width="200" height="250">
             </div>
           </div>
         </div>
@@ -201,7 +219,7 @@
             class="green-link" target="_blank" href="https://www.youtube.com/watch?v=a3VTQyNZ0Bo&t">here</a> and <a
             class="green-link" target="_blank" href="https://www.youtube.com/watch?v=4pKly2JojMw">here</a>) to get you
           started.</p>
-              <a href="#" class="stretched-link">Let's do it</a>
+              <a href="https://www.youtube.com/watch?v=4pKly2JojMw" class="stretched-link">Let's do it</a>
             </div>
             <div class="col-auto d-none d-lg-block">
               <img src="{% static 'images/yogaball.svg' %}" class="bd-placeholder-img pr-3" width="200" height="250">
@@ -274,21 +292,7 @@
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Prioritize Things</strong>
-              <h3 class="mb-0">Make a to-do list</h3>
-              <p class="mb-auto">Keep all your tasks in order with a to-do list.
-          You can buy a planner or notebook, or use our <a class="purple-link" href="todo.html">priority list tool</a>
-          to get all of your activities in one place, and check each one off when you've finished.</p>
-              <a href="#" class="stretched-link">Let's do it</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-              <img src="{% static 'images/todo.svg' %}" class="bd-placeholder-img pr-3" width="200" height="250">
-            </div>
-          </div>
-        </div>
+        
 
       </div>
     </div>

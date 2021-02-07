@@ -26,7 +26,7 @@ SECRET_KEY = 'uz!4qa_&$r+ki!5n46-ig%78q*ome!^8xwt((mw^s*j!ujqz=('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zen-mind-djangoapp', '0.0.0.0:3000', '127.0.0.1:8000']
 
 
 # Application definition
@@ -52,6 +52,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # whitenoise middle ware for static files
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -141,3 +143,4 @@ STATICFILES_DIRS = [
 
 ALLOWED_HOSTS = ['*']
 X_FRAME_OPTIONS = '*'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
