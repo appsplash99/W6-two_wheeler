@@ -25,7 +25,7 @@ SECRET_KEY = 'iihfpa!lrscjzj3+2$-g5yqk!keswt#myt$^ps-4f3s(szud&l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['w6-twowheeler.apurvchimralwar.repl.co', 'c2372aa3-c03d-458d-9900-ebdf03092b9d.id.replitusercontent.com']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'zenful_App',
+    'userMgmt',
+    'userDataApp',
 ]
 
 MIDDLEWARE = [

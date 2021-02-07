@@ -8,9 +8,7 @@
 
   <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a href="{% url 'homePage_url' %}"><img src="{% static '/images/logo.png' %}" style="height:50px"></a>
-      </li>
+      
       <li class="nav-item">
         <a class="nav-link" href="{% url 'homePage_url' %}">Home</a>
       </li>
@@ -23,10 +21,14 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'appsPage_url' %}">Apps</a>
       </li>
+
+      <li class="nav-item active">
+        <a href="{% url 'homePage_url' %}"><img src="{% static '/images/logo.png' %}" style="height:50px"></a>
+      </li>
     </ul>
   </div>
   <span class="text-light me-2">Hey, {{ request.user }}</span>
   <span>
-    <a class="nav-link text-light mx-2" href="{% url 'logout_url' %}">Logout</a>
+    <a class="nav-link text-light mx-2" href="{% url 'logout_url' %}">login</a>
   </span>
 </nav>
