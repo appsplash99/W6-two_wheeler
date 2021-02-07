@@ -22,3 +22,8 @@ def activitiesPage(request):
 def appsPage(request):
     my_dict = {}
     return render(request, template_name='zenfulApp/apps.html', context=my_dict)
+
+# resorce aboutPage
+def resourcePage(request):
+    my_dict = {}
+    return render(request, template_name='zenfulApp/resource.html', context=my_dict)

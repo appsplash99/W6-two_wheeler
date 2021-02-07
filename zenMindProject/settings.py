@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'userMgmt',
     # to display user's records
     'userDataApp',
+    # for Apps section
+    'zenMindApplications',
+    
 ]
 
 MIDDLEWARE = [

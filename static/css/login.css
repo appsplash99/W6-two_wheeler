@@ -6,7 +6,7 @@ html {
     background: #7abecc !important;
 }
 .user_card {
-    width: 350px;
+    width: 400px;
     margin-top: auto;
     margin-bottom: auto;
     background: #74cfbf;
@@ -18,7 +18,7 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+    border-radius: 20px;
 
 }
 

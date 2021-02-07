@@ -12,23 +12,28 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'homePage_url' %}">Home</a>
       </li>
+      
       <li class="nav-item">
         <a class="nav-link" href="{% url 'aboutPage_url' %}">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'activitiesPage_url' %}">Activities</a>
+        <a class="nav-link" href="{% url 'resourcePage_url' %}">Resource</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'selectActivity_url' user.id %}">Activities</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'appsPage_url' %}">Apps</a>
       </li>
-
       <li class="nav-item active">
         <a href="{% url 'homePage_url' %}"><img src="{% static '/images/logo.png' %}" style="height:50px"></a>
       </li>
     </ul>
   </div>
-  <span class="text-light me-2">Hey, {{ request.user }}</span>
+  <span class="text-light me-2">
+    <a class="text-light" href="{% url 'userProfilePage_url' user.id %}">{{ request.user }} Profile</a>
+  </span>
   <span>
-    <a class="nav-link text-light mx-2" href="{% url 'logout_url' %}">login</a>
+    <a class="nav-link text-light mx-2" href="{% url 'logout_url' %}">Logout</a>
   </span>
 </nav>

@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('zenfulApp.urls')),
     path('', include('userMgmt.urls')),
     path('', include('userDataApp.urls')),
+    path('', include('zenMindApplications.urls')),
 ]
