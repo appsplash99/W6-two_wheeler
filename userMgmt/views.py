@@ -17,6 +17,11 @@ from django.contrib.auth import authenticate, logout
 # to get current user details
 from django.contrib.auth import get_user_model
 
+
+# user access restrictions
+# decorators for user access restriction
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 
 # registerpage from crm app
@@ -35,6 +40,8 @@ def register(request):
             return redirect('my_login_url')
     my_dict={'form':form,}
     return render(request, template_name='userMgmt/register.html', context=my_dict)
+
+
 
 # login page form crm app
 def loginPage(request):
@@ -59,6 +66,9 @@ def logoutUser(request):
     logout(request)
     return redirect('my_login_url')
 
+
+# decorater for restricted access
+@login_required(login_url='my_login_url')
 # user page
 def userPage(request, primary_key):
     # database query
