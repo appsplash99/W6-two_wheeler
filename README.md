@@ -3,7 +3,7 @@ Zen-Mind is made to support everyone who experience anxiety due to academic, soc
 
 ### Try Our Web-App @ https://zen-mind-django-app.herokuapp.com/
 ### For testing you can create our own profile or use the following credentials:
-username: tuntai
+username: tuntai <br>
 password: Testpass123
 
 ## To run this web-app in your local systems:
