@@ -11,8 +11,8 @@ password: Testpass123
 ## To run this web-app in your local systems:
 
 ### 1. Pre-requisites:
-1.Python 3
-2.pip 3
+1. Python 3
+2. pip 3
 ### 2. Clone this Repo :
 ```sh
 git clone https://github.com/appsplash99/W6-two_wheeler.git
