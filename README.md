@@ -20,6 +20,12 @@ cd W6-two_wheeler
 ```
 You can also download the folder and extract all the files in your local system.<br>
 Open your IDE install the requirements.
+### 2. Install Requirements :
+```sh
+pip install django
+pip install whitenoise
+pip install gunicorn
+```
 ### 3. Apply migrations : 
 ```sh
 python manage.py makemigrations
