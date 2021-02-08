@@ -14,7 +14,7 @@ password: Testpass123
 ### 2. Clone this Repo :
 ```sh
 git clone https://github.com/appsplash99/W6-two_wheeler.git
-cd zenMindProject
+cd W6-two_wheeler
 ```
 You can also download the folder and extract all the files in your local system.
 Open your IDE install the requirements.
