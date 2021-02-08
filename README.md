@@ -36,7 +36,3 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-#### Change the categories according to your preferences by creating a superuser 
-```sh
-python manage.py createsuperuser
-```
