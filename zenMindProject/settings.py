@@ -26,7 +26,7 @@ SECRET_KEY = 'uz!4qa_&$r+ki!5n46-ig%78q*ome!^8xwt((mw^s*j!ujqz=('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['zen-mind-djangoapp', '0.0.0.0:3000', '127.0.0.1:8000']
+ALLOWED_HOSTS = ["zen-mind-django-app.herokuapp.com","127.0.0.1"]
 
 
 # Application definition
@@ -130,7 +130,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 # for audio/video/etc files
@@ -141,6 +141,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-ALLOWED_HOSTS = ['*']
-X_FRAME_OPTIONS = '*'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = '/static/'
